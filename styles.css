@@ -49,6 +49,7 @@ ul {
   flex-wrap: wrap;
   background-color: #282828;
 }
+
 #intro h2 {
   margin-top: -6%;
   align-self: start;
@@ -59,12 +60,14 @@ ul {
 #intro {
   border-bottom: solid #3c3c3c 1px;
 }
+
 #intro section:nth-child(1) {
   display: flex;
   flex-wrap: wrap;
   width: 65%;
   padding: 0;
 }
+
 #intro section:nth-child(1) div {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +75,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
 }
+
 #intro section:nth-child(1) img {
   display: inline-block;
   text-align: center;
@@ -80,6 +84,7 @@ ul {
   padding: 0;
   margin-right: 3%;
 }
+
 #intro section:nth-child(2) {
   margin-right: auto;
   display: flex;
@@ -91,10 +96,12 @@ ul {
   font-size: 1.1rem;
   color: #7f7b7a;
 }
+
 #intro .info span {
   font-weight: bold;
   color: #f3f6e9;
 }
+
 #intro section:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +118,7 @@ main {
   width: 65%;
   padding-right: 0;
 }
+
 main section {
   display: flex;
   flex-wrap: wrap;
@@ -118,10 +126,12 @@ main section {
   padding-bottom: 5%;
   margin-right: 0;
 }
+
 #employment section:first-of-type,
 #education section:first-of-type {
   border-bottom: solid #3c3c3c 1px;
 }
+
 #education > h2:nth-child(1),
 #employment > h2:nth-child(1) {
   width: 100%;
@@ -140,6 +150,7 @@ main section {
 main section section p:nth-child(4) {
   width: 100% !important;
 }
+
 #employment section p:first-of-type,
 #education section p:first-of-type {
   width: 48%;
@@ -153,6 +164,7 @@ main section section p:nth-child(4) {
   width: 20% !important;
   margin-left: auto;
 }
+
 aside {
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +183,7 @@ aside section {
   width: 100%;
   margin-bottom: 2rem;
 }
+
 .skill p {
   margin: 0;
   padding: 0;
@@ -182,6 +195,7 @@ aside section {
   height: 2rem;
   background-color: #373737;
 }
+
 .percent {
   display: flex;
   justify-content: flex-end;
@@ -190,6 +204,7 @@ aside section {
   color: #f3f6e9;
   padding-right: 5%;
 }
+
 #js .percent {
   width: 70%;
   background-color: #2d7e9f;
