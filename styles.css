@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   padding: 4% 5% 5% 8%;
@@ -43,10 +46,20 @@ li {
 ul {
   padding: 0;
 }
-
-.container {
+.container,
+#intro section:nth-child(1),
+#intro section:nth-child(1) div,
+#intro section:nth-child(1) img,
+#intro section:nth-child(3),
+main,
+main section,
+aside,
+.skill,
+.percent {
   display: flex;
   flex-wrap: wrap;
+}
+.container {
   background-color: #282828;
 }
 
@@ -62,15 +75,11 @@ ul {
 }
 
 #intro section:nth-child(1) {
-  display: flex;
-  flex-wrap: wrap;
-  width: 65%;
+  flex: 65%;
   padding: 0;
 }
 
 #intro section:nth-child(1) div {
-  display: flex;
-  flex-wrap: wrap;
   width: 70%;
   justify-content: flex-start;
   align-items: center;
@@ -79,7 +88,7 @@ ul {
 #intro section:nth-child(1) img {
   display: inline-block;
   text-align: center;
-  width: 25%;
+  flex: 25%;
   /* border: solid red 1px; */
   padding: 0;
   margin-right: 3%;
@@ -88,7 +97,7 @@ ul {
 #intro section:nth-child(2) {
   margin-right: auto;
   display: flex;
-  width: 30%;
+  flex: 30%;
 }
 
 #intro .info {
@@ -102,27 +111,18 @@ ul {
   color: #f3f6e9;
 }
 
-#intro section:nth-child(3) {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 #intro section:nth-child(3) p {
   color: #707070;
   line-height: 1.5;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 65%;
+  flex: 65%;
   padding-right: 0;
 }
 
 main section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex: 100%;
   padding-bottom: 5%;
   margin-right: 0;
 }
@@ -140,20 +140,20 @@ main section {
 
 #employment section h2,
 #employment section p {
-  width: 50%;
+  flex: 50%;
 }
 
 #education section h2 {
-  width: 60%;
+  flex: 60%;
 }
 
 main section section p:nth-child(4) {
-  width: 100% !important;
+  flex: 100% !important;
 }
 
 #employment section p:first-of-type,
 #education section p:first-of-type {
-  width: 48%;
+  flex: 48%;
   margin-right: auto;
   margin-bottom: 0;
   text-align: right;
@@ -161,26 +161,22 @@ main section section p:nth-child(4) {
 }
 
 #education p:first-of-type {
-  width: 20% !important;
+  flex: 20% !important;
   margin-left: auto;
 }
 
 aside {
-  display: flex;
-  flex-wrap: wrap;
-  width: 22%;
+  flex: 30%;
   margin-left: 2%;
 }
 
 aside section {
-  width: 100%;
+  flex: 100%;
   padding-right: 0;
 }
 
 .skill {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex: 100%;
   margin-bottom: 2rem;
 }
 
@@ -191,7 +187,7 @@ aside section {
 }
 
 .bar {
-  width: 100%;
+  flex: 100%;
   height: 2rem;
   background-color: #373737;
 }
@@ -221,6 +217,6 @@ aside section {
 }
 
 #html-css .percent {
-  width: 50%;
+  width: 80%;
   background-color: #ffbe24;
 }
